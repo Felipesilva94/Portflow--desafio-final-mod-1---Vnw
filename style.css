@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100;400 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    max-width: 1900px;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    background: white;
+    margin: 0 auto;
+}
+
+.conteiner-menu {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+    margin: 0 auto;
+    
+}
+
+.menu-hamburg {
+    display: none;
+    color: white;
+    background: black;
+    padding: 0 2.5em;
+    font-size: 1.5rem;
+
+}
+
+.div-logo {
+    width: 15%;
+}
+
+.div-logo h1 {
+    font-size: 1.3rem;
+    padding-left: 2.7em;
+}
+
+.navegation ul {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin: 0 auto;
+    
+}
+
+
+.navegation li:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.conteiner-azul {
+    width: 100%;
+    height: 25em;
+    background-image: url(imagens/laranja-azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-azul {
+    width: 90%;
+    color: white;
+    position: relative;
+    left: 2.5em;
+    top: 10em;
+    padding-left: 2.7em;
+}
+
+.texto-azul h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 0.6em;
+}
+
+.conteiner-image {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.caixa-image-st {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.caixa-image-st img {
+    width: 20%;
+    padding-top: 0.5em;
+}
+
+footer {
+    background: rgb(250, 250, 250);
+    margin-top: 3em;
+}
+
+.conteiner-footer {
+    display: flex;
+    width: 100%;
+    height: 5em;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-left: 1em;
+
+}
+.div-footer{
+    width: 100%;
+    
+}
+
+.icon-social {
+    display: flex;
+    width: 240px;
+    margin-left: 6.4%;
+    gap: 0.5rem;
+}
+
+.icon-social img {
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+
+}
+
+.texto-footer {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.texto-footer h2 {
+    font-size: 1rem;
+}
+
+.texto-footer p {
+    font-size: 0.7rem;
+    width: 35em;
+    color: rgb(146, 144, 141);
+}
+
+.btn-topo {
+    background-color: #333333;
+    color: #CCCCCC;
+    padding: 0.6em 1.5em;
+    border: none;
+    display: none;
+}
+
+@media(max-width:910px) {
+
+    .conteiner-footer {
+        justify-content: center;
+
+    }
+
+    .texto-footer {
+
+        display: flex;
+        width: 60%;
+        align-items: center;
+        gap: 0.6rem;
+
+    }
+
+    .texto-footer p {
+        font-size: 0.63rem;
+    }
+
+}
+
+@media(max-width:716px) {
+
+    .conteiner-menu {
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .menu-hamburg {
+        display: initial;
+    }
+
+    .div-logo {
+        width: 50%;
+        order: 2;
+    }
+
+    .img-logo {
+        width: 60%;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+
+    .navegation ul {
+        display: none;
+    }
+
+    .texto-azul {
+        width: 49%;
+        position: absolute;
+        top: 16em;
+        left: -1em;
+    }
+
+    .texto-azul h2 {
+        font-size: 2.5rem;
+    }
+
+    .conteiner-azul {
+        height: 30em;
+        background-position-x: 80%;
+    }
+
+    .caixa-image-st {
+        padding-top: 2rem;
+    }
+
+    .caixa-image-st img {
+        width: 80%;
+    }
+
+    .erva-mate {
+        order: -5;
+    }
+
+    .pao-queijo {
+        order: -7;
+    }
+
+    .sorvete {
+        order: -12;
+    }
+
+    .monitores {
+        order: -9;
+    }
+
+    .cd-pasta {
+        order: -14;
+    }
+
+    .caneca {
+        order: -8;
+    }
+
+    .monitor-celular {
+        order: -11;
+    }
+
+    .barra-cereal {
+        order: -4;
+    }
+
+    .celular-verde {
+        order: -6;
+    }
+
+    .tablet-cafe {
+        order: -3;
+
+    }
+
+    .camera-fotografica {
+        order: -13;
+
+    }
+
+    .fotos-antiga {
+        order: -10;
+    }
+
+    @media(max-width:716px) {
+
+        .conteiner-footer {
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;   
+
+        }
+
+        .texto-footer{
+            flex-direction: column;
+            align-items: flex-start;
+            width: 70%;
+            margin: 0 auto;
+            
+            
+        }
+        .icon-social{
+            background: #7FDBD4;
+            width: 83.5%;
+            text-align: center;
+            margin-right: 2.5em;
+            padding: 0.5em 0;
+            
+        }
+
+        .icon-social img{
+            margin: 0 auto;
+        }
+        .texto-footer p{
+            width: 50%;
+            font-size: 0.6rem; 
+            
+        }
+        .div-footer {  
+            display: flex;
+            width: 90%;
+            align-items: center;
+            margin: 0 auto;
+
+        }
+        .div-btn{
+            margin-right: 1.2em;
+        }
+        .btn-topo{
+            display: initial;
+        }
+
+
+
+    }
