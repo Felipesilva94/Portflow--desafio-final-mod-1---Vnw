@@ -33,7 +33,7 @@ header {
     align-items: center;
     padding: 1.5em 0;
     margin: 0 auto;
-    
+
 }
 
 .menu-hamburg {
@@ -59,9 +59,32 @@ header {
     width: 100%;
     gap: 1rem;
     margin: 0 auto;
-    
+
 }
 
+li {
+    position: relative;
+    padding: 0 1em;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(65, 65, 206, 0.795);
+    height: 3px;
+    width: 0px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+
+
+}
+
+.navegation li:hover:after {
+    width: 100%;
+
+
+}
 
 .navegation li:hover {
     font-weight: 600;
@@ -129,9 +152,10 @@ footer {
     padding-left: 1em;
 
 }
-.div-footer{
+
+.div-footer {
     width: 100%;
-    
+
 }
 
 .icon-social {
@@ -303,46 +327,51 @@ footer {
         .conteiner-footer {
             justify-content: center;
             flex-direction: column;
-            width: 100%;   
+            width: 100%;
 
         }
 
-        .texto-footer{
+        .texto-footer {
             flex-direction: column;
             align-items: flex-start;
             width: 70%;
             margin: 0 auto;
-            
-            
+
+
         }
-        .icon-social{
+
+        .icon-social {
             background: #7FDBD4;
             width: 83.5%;
             text-align: center;
             margin-right: 2.5em;
             padding: 0.5em 0;
-            
+
         }
 
-        .icon-social img{
+        .icon-social img {
             margin: 0 auto;
         }
-        .texto-footer p{
+
+        .texto-footer p {
             width: 50%;
-            font-size: 0.6rem; 
-            
+            font-size: 0.6rem;
+
         }
-        .div-footer {  
+
+        .div-footer {
             display: flex;
             width: 90%;
             align-items: center;
             margin: 0 auto;
 
         }
-        .div-btn{
+
+        .div-btn {
             margin-right: 1.2em;
         }
-        .btn-topo{
+
+        .btn-topo {
             display: initial;
         }
 
